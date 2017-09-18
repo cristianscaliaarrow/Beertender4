@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b2e64d4dcd9d2474db6895d5dcbfffca
+timeCreated: 1502294366
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KG Ten Thousand Reasons
+  fontNames:
+  - KG Ten Thousand Reasons
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
