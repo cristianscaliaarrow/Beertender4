@@ -11,6 +11,7 @@ public class PanelRanking : MonoBehaviour {
 
     private void OnEnable()
     {
+        SendAlgo.instance.LoadScreen("Ranking");
         PhpQuery.GetRanking(OnGeted);
     }
 

@@ -15,6 +15,9 @@ public class HomeStaff : MonoBehaviour {
     {
         //txtPuntos.text = "TENÉS <size=55> "+Login.debugUser.total_pts+" </size> PUNTOS";
         Login.UpdateGUI();
+        //SendAlgo.instance.OpenScreen("Home Staff");
+        SendAlgo.instance.LoadScreen("Home STAFF");
+        print("Log staff");
     }
 
     public void BTN_UploadPhoto()

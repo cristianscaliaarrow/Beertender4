@@ -11,6 +11,12 @@ public class Beertender : MonoBehaviour {
     public GameObject panelTerminos;
     public GameObject panelConoceMarca;
 
+    private void OnEnable()
+    {
+        SendAlgo.instance.LoadScreen("Beertender");
+    }
+
+
     private void OnDisable()
     {
         staff.SetActive(false);

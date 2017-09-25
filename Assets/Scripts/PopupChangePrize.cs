@@ -41,11 +41,12 @@ public class PopupChangePrize : MonoBehaviour {
             Login.debugUser.total_pts -= discount;
             Login.UpdateGUI();
             PhpQuery.SendQueryResponse(PhpQuery.url + "userprize", "{ \"data\": { \"user_id\": \"" + Login.debugUser.id + "\", \"prize_staff_id\": \"" + prize.id + "\", \"pts_used\": \"" + discount + "\" }}", OnRequest);
-
+            SendAlgo.instance.LogEvent("ChangePrize", prize.name);
         }
         else
         {
             PanelResult.ShowMsg("No Tiene Suficientes Puntos", 1,()=>BTN_ClosePopUp());
+            SendAlgo.instance.LogEvent("ChangePrize", "Insufficient Points");
         }
 
        

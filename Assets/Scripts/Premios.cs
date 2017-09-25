@@ -8,7 +8,12 @@ public class Premios : MonoBehaviour {
     public GameObject panelManager;
     public GameObject panelOwner;
 
-    
+    private void OnEnable()
+    {
+        SendAlgo.instance.LoadScreen("Premios");
+    }
+
+
     private void OnDisable()
     {
         panelStaff.SetActive(false);

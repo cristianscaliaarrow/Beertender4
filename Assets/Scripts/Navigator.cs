@@ -59,6 +59,7 @@ public class Navigator : MonoBehaviour {
         if (block) return;
         contacto.Toggle(true);
         panelContacto.SetActive(true);
+        SendAlgo.instance.LoadScreen("Contacto");
     }
 
     public void BTN_Home()

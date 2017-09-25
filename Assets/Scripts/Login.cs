@@ -73,6 +73,7 @@ public class Login : MonoBehaviour {
 
     private void OnLoginOK(string result)
     {
+        SendAlgo.instance.OpenScreen("Login");
         User u = JsonUtility.FromJson<JsonParser<User>>(result).data;
         debugUser = u;
         PhpQuery.GetUserRegisters(OnGetUserRegisters);

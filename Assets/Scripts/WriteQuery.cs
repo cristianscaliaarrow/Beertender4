@@ -33,6 +33,8 @@ public class WriteQuery : MonoBehaviour {
         else
         {
             GameManager.instance.SendContactoUNITY(nombre.text,correo.text, tema.text, message.text);
+            SendAlgo.instance.LogEvent("Contacto", "SendMessage");
+
         }
     }
 
